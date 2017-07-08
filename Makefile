@@ -2,7 +2,7 @@ CC?=gcc
 
 CFLAGS += -Wall -Wextra -Werror -pedantic --std=c99 
 CFLAGS_DEBUG = $(CFLAGS) -O0 -g
-CFLAGS_FAST = $(CFLAGS) -03
+CFLAGS_FAST = $(CFLAGS) -O3
 CFLAGS_LIB = $(CFLAGS_FAST) -fPIC
 
 default: irc_parser.o
